@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <!-- Number of rounds -->
+  <input type="number" data-ns-test="game-number" id="gameNumber" />
+
+  <!-- Play button -->
+  <button data-ns-test="play-game" id="playGame">Play</button>
+
+  <br><br>
+
+  <!-- User choices -->
+  <button data-ns-test="rock" id="rock">Rock</button>
+  <button data-ns-test="paper" id="paper">Paper</button>
+  <button data-ns-test="scissors" id="scissors">Scissors</button>
+
+  <br><br>
+
+  <!-- Game info -->
+  <div>
+    Computer Choose: <span data-ns-test="computer-choose" id="computerChoose"></span>
+  </div>
+  <div>
+    Round Result: <span data-ns-test="round-result" id="roundResult"></span>
+  </div>
+  <div>
+    Rounds Left: <span data-ns-test="rounds-left" id="roundsLeft">0</span>
+  </div>
+  <div>
+    User Points: <span data-ns-test="user-points" id="userPoints">0</span>
+  </div>
+  <div>
+    Computer Points: <span data-ns-test="computer-points" id="computerPoints">0</span>
+  </div>
+
+  <br>
+
+  <!-- Final game result -->
+  <div>
+    Game Result: <span data-ns-test="game-result" id="gameResult"></span>
+  </div>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
